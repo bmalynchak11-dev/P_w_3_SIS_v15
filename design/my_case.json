@@ -1,6 +1,25 @@
 {
-  "task": 0,
-  "domain": "",
-  "args": [],
+  "task": 5,
+  "domain": "Система управління студентським гуртожитком із розмежуванням відповідальності",
+  "args": [
+    {
+      "Поселення": {
+        "writes": ["rooms_allocation", "settlement_contracts"],
+        "reads": ["rooms_allocation", "settlement_contracts"]
+      },
+      "Оплата": {
+        "writes": ["dorm_invoices", "payment_transactions"],
+        "reads": ["dorm_invoices", "payment_transactions"]
+      },
+      "Перепустки": {
+        "writes": ["access_badges", "turnstile_logs"],
+        "reads": ["access_badges", "turnstile_logs"]
+      },
+      "Інвентар": {
+        "writes": ["furniture_inventory", "repair_requests"],
+        "reads": ["furniture_inventory", "repair_requests"]
+      }
+    }
+  ],
   "extra": {}
 }
